@@ -12,8 +12,8 @@ class TrainOptions(BaseOptions):
         self.parser.add_argument('--debug', action='store_true', help='only do one epoch and displays at each iteration')
 
         # for training
-        self.parser.add_argument('--continue_train', action='store_false', help='continue training: load the latest model')
-        self.parser.add_argument('--load_pretrain', type=str, default='checkpoints/2020-07-14_2Stage_BP_light_HDR', help='load the pretrained model from the specified location')
+        self.parser.add_argument('--continue_train', action='store_true', help='continue training: load the latest model')
+        self.parser.add_argument('--load_pretrain', type=str, default='', help='load the pretrained model from the specified location')
         self.parser.add_argument('--which_epoch', type=str, default='latest', help='which epoch to load? set to latest to use latest cached model')
         self.parser.add_argument('--phase', type=str, default='train', help='train, val, test, etc')
         self.parser.add_argument('--niter', type=int, default=100, help='# of iter at starting learning rate')
