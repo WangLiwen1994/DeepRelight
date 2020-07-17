@@ -43,10 +43,10 @@ After downloading, please put it under the `datasets` folder.
 
 ### Training
 - Train a model at 512 x 512 resolution:
-The training process includes three stages: Firstly, we trained the scene reconversion using paired input and wide-range target, accompanied with the discriminators. Secondly, we trained the shadow prior estimation network by paired input and target images with the other discriminators. Finally, we fixed the shadow prior estimation and trained the whole DRN with paired input and target images, using Laplace and VGG (*0.01) losses. The training images are resized to 512*512 because of the limitation of the GPU memory. All stages uses the Adam optimization with momentum 0.5 and learning rate 0.0002. 
 ```bash
-# we are still preparing for it, because it need three steps to train it. We hope the future code can be run with one single code
-#python train.py 
+python train.py 
 ```
+The training process includes three stages: Firstly, we trained the scene reconversion using paired input and wide-range target, accompanied with the discriminators. Secondly, we trained the shadow prior estimation network by paired input and target images with the other discriminators. Finally, we fixed the shadow prior estimation and trained the whole DRN with paired input and target images, using Laplace and VGG (*0.01) losses. The training images are resized to 512x512 because of the limitation of the GPU memory. All stages uses the Adam optimization with momentum 0.5 and learning rate 0.0002. 
+
 ## Acknowledgments
 This code borrows heavily from [pytorch-CycleGAN-and-pix2pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix).

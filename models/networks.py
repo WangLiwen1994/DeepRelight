@@ -219,8 +219,8 @@ class LightTrans(nn.Module):
         # for param in self.toHDR.parameters():
         #     param.requires_grad = False
             
-        for param in self.estLight.parameters():
-            param.requires_grad = False
+        # for param in self.estLight.parameters():
+        #     param.requires_grad = False
         
         # self.toHDR.load_state_dict(torch.load("checkpoints/Pretrained/hdr_v2_net_pretrainedG.pth", map_location=lambda storage, loc: storage),
         #                            strict=False)
