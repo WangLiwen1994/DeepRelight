@@ -5,7 +5,7 @@ It contains the codes to attend AIM 2020 Relighting Challenge Track 1: One-to-on
 
 Our testing result can be found from [here](https://drive.google.com/file/d/1w5-XPb3prHha2ens0rrIPeLafB--4g6S/view?usp=sharing) (google drive link)
 
-![The proposed method](figs/architecture.png)
+![](figures/architecture.png)
 
 
 ## Prerequisites
