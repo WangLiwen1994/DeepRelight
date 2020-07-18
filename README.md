@@ -39,7 +39,9 @@ The test results will be saved to the folder: `./output`.
 
 ### Dataset
 - We use the VIDIT dataset (track 3). To train a model on the full dataset, please download it first.
-After downloading, please put it under the `datasets` folder.
+- We generate the wide-range images (through the OpenCV package) to supervise the scene reconversion network, please download it from [here](https://drive.google.com/file/d/16tW_3CYNmks7R3NJany31TXeOiiEZrIw/view?usp=sharing)
+
+After downloading, please put them under the `datasets` folder, which are "datasets/track3_train" and "datasets/track3_HDR"
 
 
 ### Training
