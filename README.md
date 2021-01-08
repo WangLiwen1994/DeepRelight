@@ -19,6 +19,7 @@ Our testing result can be found from [here](https://drive.google.com/file/d/1w5-
 - Install python libraries [dominate](https://github.com/Knio/dominate).
 ```bash
 pip install dominate, kornia
+pip install git+https://github.com/S-aiueo32/lpips-pytorch.git
 ```
 - Clone this repo
 
